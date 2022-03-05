@@ -1,0 +1,58 @@
+.boostContainer {
+  height: 30vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.3rem;
+
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("../../images/bg-boost-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boostContainer > h2 {
+  color: white;
+  font-size: 40px;
+}
+
+.boostButton {
+  padding: 0.7rem 2.3rem;
+
+  border: none;
+  border-radius: 3rem;
+
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+
+  font-size: 19px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.boostButton:hover {
+  background-color: rgb(153, 238, 238);
+}
+
+@media screen and (max-width: 1000px) {
+  .boostContainer {
+    height: 40vh;
+
+    background-image: url("../../images/bg-boost-mobile.svg");
+
+    gap: 1rem;
+  }
+
+  .boostContainer > h2 {
+    font-size: 27px;
+  }
+
+  .boostButton {
+    padding: 0.8rem 2.3rem;
+  }
+}

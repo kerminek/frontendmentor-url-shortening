@@ -1,0 +1,259 @@
+.advancedContainer {
+  min-height: 100vh;
+
+  background-color: hsl(0, 0%, 91%);
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0 10rem;
+  padding-top: 5.5rem;
+}
+
+.shortedLinkContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: white;
+
+  width: 100%;
+  padding: 1rem 1.5rem;
+
+  border-radius: 0.3rem;
+
+  font-size: 18px;
+
+  margin: 0.5rem 0;
+}
+
+.shorted_RightSide {
+  display: flex;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.shorted_RightSide > p {
+  color: hsl(180, 66%, 49%);
+}
+
+.shorted_RightSide > button {
+  padding: 0.5rem 0;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+
+  border: none;
+  border-radius: 0.3rem;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  width: 6rem;
+}
+
+.shorted_RightSide > button:hover {
+  background-color: rgb(153, 238, 238);
+}
+
+.clickedButton {
+  background-color: hsl(257, 27%, 26%);
+}
+
+.advancedText {
+  text-align: center;
+  max-width: 32rem;
+
+  margin: 6rem 0;
+}
+
+.advancedText > h2 {
+  color: hsl(255, 11%, 22%);
+  font-size: 45px;
+}
+.advancedText > p {
+  font-size: 18px;
+  color: hsl(257, 7%, 63%);
+
+  margin-top: 0.7rem;
+}
+
+.advancedWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1.5rem;
+
+  width: 100%;
+  max-width: 80rem;
+  margin-bottom: 10rem;
+
+  position: relative;
+}
+
+.advancedBox {
+  width: 20.5rem;
+  min-height: 15rem;
+
+  background-color: white;
+
+  padding: 4rem 1.25rem 1rem;
+
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  border-radius: 0.3rem;
+
+  z-index: 99;
+}
+
+.advancedBar {
+  content: "";
+  display: block;
+
+  position: absolute;
+
+  max-width: 60rem;
+  height: 0.5rem;
+
+  background-color: hsl(180, 66%, 49%);
+
+  z-index: 1;
+
+  bottom: 6.5rem;
+  width: 100%;
+}
+
+.advancedBox:nth-child(2) {
+  top: 2.5rem;
+}
+
+.advancedBox:nth-child(3) {
+  top: 5rem;
+}
+
+.advancedBox > h3 {
+  color: hsl(255, 11%, 22%);
+  font-size: 20px;
+}
+
+.advancedBox > p {
+  color: hsl(257, 7%, 63%);
+  font-size: 15px;
+}
+
+.boxLogo {
+  background-color: hsl(257, 27%, 26%);
+
+  height: 5rem;
+  width: 5rem;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: -2.5rem;
+  left: 1.3rem;
+}
+
+.boxLogo > img {
+  height: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .advancedContainer {
+    padding: 5.5rem 1.5rem 0;
+  }
+
+  .shortedLinkContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 1rem 0rem;
+    width: 100%;
+    font-size: 16px;
+
+    margin: 0.8rem 0;
+  }
+
+  .shortedLinkContainer > p {
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .shorted_RightSide {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+
+    border-top: 1px solid rgba(211, 211, 211, 0.754);
+
+    padding: 0.6rem 1rem 0;
+  }
+
+  .shorted_RightSide > button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .advancedText > h2 {
+    font-size: 28px;
+  }
+  .advancedText > p {
+    font-size: 17px;
+  }
+  .advancedWrapper {
+    flex-direction: column;
+
+    gap: 5rem;
+
+    margin-bottom: 4.5rem;
+  }
+
+  .advancedBox {
+    width: 100%;
+    min-height: fit-content;
+
+    text-align: center;
+
+    padding: 4rem 1.8rem 2rem;
+  }
+
+  .advancedBox:nth-child(2) {
+    top: 0;
+  }
+
+  .advancedBox:nth-child(3) {
+    top: 0;
+  }
+
+  .advancedBar {
+    width: 0.5rem;
+    height: 80%;
+  }
+
+  .advancedBox > h3 {
+    font-size: 22px;
+  }
+
+  .advancedBox > p {
+    font-size: 16px;
+  }
+
+  .boxLogo {
+    left: calc(50% - 2.5rem);
+    top: -2.5rem;
+  }
+}

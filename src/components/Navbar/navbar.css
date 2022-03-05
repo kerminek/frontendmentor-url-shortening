@@ -1,0 +1,165 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 10rem;
+
+  background-color: white;
+
+  gap: 3rem;
+
+  height: 97px;
+
+  color: hsl(257, 7%, 63%);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hamburgerMenu {
+  display: none;
+  flex-direction: column;
+
+  width: 2rem;
+  height: fit-content;
+}
+
+.hamburgerSlice {
+  width: 100%;
+  height: 0.2rem;
+
+  background-color: gray;
+
+  margin: 0.21rem 0;
+
+  border-radius: 1rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.menu > ul {
+  display: flex;
+  gap: 2rem;
+
+  list-style: none;
+}
+
+.menu > ul > li {
+  transition: all 0.3s ease;
+}
+
+.menu > ul > li:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2.5rem;
+}
+
+.loginButton {
+  transition: all 0.3s ease;
+}
+
+.loginButton:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.signUpButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 200%;
+  width: max-content;
+  padding: 0 1.5rem;
+
+  border-radius: 3rem;
+
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+
+  transition: all 0.3s ease;
+}
+
+.signUpButton:hover {
+  cursor: pointer;
+
+  background-color: rgb(153, 238, 238);
+}
+
+@media screen and (max-width: 1000px) {
+  .navbarContainer {
+    padding: 0 1.5rem;
+  }
+  .hamburgerMenu {
+    display: flex;
+  }
+  .menu {
+    display: none;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    background-color: hsl(257, 27%, 26%);
+
+    top: 5.5rem;
+
+    width: calc(100% - 3rem);
+    max-height: 45vh;
+    min-height: 25rem;
+
+    z-index: 99;
+
+    border-radius: 0.7rem;
+
+    font-size: 20px;
+
+    padding: 2rem 1.5rem;
+  }
+  .menu > ul {
+    flex-direction: column;
+
+    color: white;
+
+    height: 100%;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .menu > ul > li {
+    width: min-content;
+  }
+  .buttonsWrapper {
+    border-top: 1px solid hsl(258, 25%, 36%);
+
+    flex-direction: column;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+
+    gap: 1.8rem;
+
+    width: 100%;
+  }
+  .loginButton {
+    color: white;
+  }
+  .signUpButton {
+    padding: 0.8rem;
+    width: 100%;
+  }
+}
