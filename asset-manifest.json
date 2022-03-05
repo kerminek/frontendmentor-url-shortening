@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/frontendmentor-url-shortening/static/css/main.40bed0ec.css",
+    "main.css": "/frontendmentor-url-shortening/static/css/main.e6e49398.css",
     "main.js": "/frontendmentor-url-shortening/static/js/main.1d98d2eb.js",
     "static/media/illustration-working.svg": "/frontendmentor-url-shortening/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
     "static/media/logo.svg": "/frontendmentor-url-shortening/static/media/logo.834643034343520f3b4d7e43111ed4d8.svg",
@@ -16,11 +16,11 @@
     "static/media/icon-twitter.svg": "/frontendmentor-url-shortening/static/media/icon-twitter.1d5c6d5e6ab1717a500af2df0a87959a.svg",
     "static/media/icon-facebook.svg": "/frontendmentor-url-shortening/static/media/icon-facebook.229c75a01827343aef31ae916e2ec18a.svg",
     "static/media/bg-shorten-mobile.svg": "/frontendmentor-url-shortening/static/media/bg-shorten-mobile.41c34b33a14a3077e506.svg",
-    "main.40bed0ec.css.map": "/frontendmentor-url-shortening/static/css/main.40bed0ec.css.map",
+    "main.e6e49398.css.map": "/frontendmentor-url-shortening/static/css/main.e6e49398.css.map",
     "main.1d98d2eb.js.map": "/frontendmentor-url-shortening/static/js/main.1d98d2eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.40bed0ec.css",
+    "static/css/main.e6e49398.css",
     "static/js/main.1d98d2eb.js"
   ]
 }
